@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/recod_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="録音"
+        android:textSize="45sp"></Button>
+
+    <Button
+        android:id="@+id/voice_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="音声"
+        android:textSize="45sp"></Button>
+
+    <Button
+        android:id="@+id/automaticvoice_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="防犯機能"
+        android:textSize="45sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/sensa_button"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="センサー起動"
+        android:textSize="45sp"></Button>
+
+</LinearLayout>
