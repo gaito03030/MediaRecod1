@@ -64,12 +64,14 @@ public class MainActivity extends AppCompatActivity {
                     ActivityCompat.requestPermissions(MainActivity.this, permission, 1);
                     return;
                 }
-
+                //
                 EditText et1 = (EditText) findViewById(R.id.editText);
                 _myGlobals.name = et1.getText().toString();
 
+                //内部ストレージに保存する際の名前設定
                 filePath = getFilesDir().getPath() + "/" + _myGlobals.name + ".mp3";
 
+                //録音終了時保存
                 if (!isRec) {
                     rec.setAudioSource(MediaRecorder.AudioSource.MIC);
                     rec.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
@@ -99,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        //再生ボタンを押されたとき再生される
         findViewById(R.id.btn_play).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -171,13 +175,3 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-/*
-* getFilesDir() .getPath()+
-*
-*
-* Environment.getExternalStoragePublicDirectory(
-  //      Environment.DIRECTORY_MUSIC)
-*
-*
-* "/sound.mp3"
-* */
